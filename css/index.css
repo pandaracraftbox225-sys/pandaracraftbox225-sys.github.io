@@ -1,0 +1,174 @@
+
+/* Colors I am Using:
+	Ink: #04080F
+	Lavender: #FEEAFA
+	Cherry: #C41E3D
+	Ember: #BA1200
+	Sky: #57C4E5
+
+	NOTE: FIX HOW THE MEDIA CSS INTERACTS WITH THE BUTTONS. THEY ARE LI NOW
+*/
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Gochi+Hand|Roboto');
+/**/
+
+header {
+	height: fit-content;
+	background: linear-gradient(to bottom, var(--lavender) 75%, rgb(255,0,0,0) 100%);
+	position: initial;
+}
+
+.site-banner {
+	width: 100%;
+	height: fit-content;
+	justify-items: center;
+}
+
+.banner-logo {
+	margin-top: 1vh;
+	height: fit-content;
+}
+
+h1 {
+	line-height: 0.8em;
+	font-size: 6vmax;
+}
+
+.banner-logo img {
+	height: 15vmax;
+}
+
+.site-banner h3 {
+	font-style: italic;
+	font-size: 2vmax;
+	text-decoration: overline;
+	text-decoration-color: var(--sky);
+	color: var(--ember);
+	padding-bottom: 4em;
+}
+
+main {
+	margin-top: 0px;
+}
+
+nav {
+	height: fit-content;
+	min-height: 55vmin;
+	width: calc(100% - 4vw);
+	margin: 2vw auto;
+	padding: 1vw;
+	border: 2px solid var(--cherry);
+	border-radius: 5px;
+	box-shadow: inset 0 0 30px 0 #E1849C;
+	background-image: url("../assets/pandara_artist_portrait.png");
+	background-size: 50vmin;
+	background-repeat: no-repeat;
+	background-position: calc(12% - 1vmin) 100%;
+}
+
+.welcome-message {
+	height: fit-content;
+	border: 2px solid var(--ember);
+	border-radius: 5px;
+	margin: 0.5vh;
+	margin-left: 40%;
+}
+
+.welcome-message h2 {
+	padding: 1vmax;
+}
+
+.catagory-buttons {
+	height: fit-content;
+	margin: 0.5vh;
+	margin-left: 50%;
+}
+
+.catagory-buttons li {
+	width: calc(100% - 1em);
+	max-width: 75%;
+	min-width: 50%;
+	margin: 0.5em auto;
+}
+
+.preview {
+	justify-items: center;
+}
+
+.preview p, .preview h2 {
+	margin: .5em 0;
+}
+
+@media only screen and (min-width: 601px) {
+	nav {
+		max-width: calc(30vmax * 2);
+		min-height: 31vmax;
+		background-size: 30vmax;
+	}
+
+	.welcome-message {
+		margin: 1vh;
+		margin-left: 50%;
+	}
+
+	.welcome-message h2 {
+		padding: .5em;
+	}
+
+	.catagory-buttons li {
+		margin: 0.5em auto;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	nav {
+		margin: 4vw auto;
+	}
+
+}
+
+@media only screen and (min-width: 820px) and (min-height: 460px) {
+
+	h1 {
+		font-size: 50px;
+	}
+
+	.banner-logo img {
+		height: 125px;
+	}
+
+	.site-banner h3 {
+		font-size: 17px;
+	}
+
+	nav {
+		width: 615px;
+		height: 317px;
+		min-height: 0;
+		background-size: 310px;
+		padding: 10px;
+
+		display: grid;
+		grid-template-rows: 30% 70%;
+	}
+
+	.welcome-message {
+		margin: 10px;
+		margin-left: 50%;
+
+		grid-row: 1;
+	}
+
+	.catagory-buttons {
+		grid-row: 2;
+		align-self: center;
+
+		margin: 5px 10px 5px 50%;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (hover: hover) {
+
+}
+	
