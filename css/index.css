@@ -25,17 +25,18 @@ header {
 .banner-logo {
 	margin-top: 1vh;
 	height: fit-content;
-	justify-self: center;
+	display: flex;
+	justify-content: center;
+}
+
+.banner-logo img {
+	height: 15vmax;
 }
 
 h1 {
 	line-height: 0.8em;
 	font-size: 6vmax;
 	display: contents;
-}
-
-.banner-logo img {
-	height: 15vmax;
 }
 
 .site-banner h3 {
