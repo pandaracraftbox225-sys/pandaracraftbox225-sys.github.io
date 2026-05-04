@@ -15,22 +15,23 @@ header {
 	height: fit-content;
 	background: linear-gradient(to bottom, var(--lavender) 75%, rgb(255,0,0,0) 100%);
 	position: initial;
+	justify-content: center;
 }
 
 .site-banner {
-	width: 100%;
 	height: fit-content;
-	justify-items: center;
 }
 
 .banner-logo {
 	margin-top: 1vh;
 	height: fit-content;
+	justify-self: center;
 }
 
 h1 {
 	line-height: 0.8em;
 	font-size: 6vmax;
+	display: contents;
 }
 
 .banner-logo img {
