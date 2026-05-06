@@ -55,7 +55,7 @@ img {
 }
 
 .line {
-	width: 75vw;
+	width: 75%;
 	height: 2px;
 	margin: 0 auto;
 	background-color: var(--sky);

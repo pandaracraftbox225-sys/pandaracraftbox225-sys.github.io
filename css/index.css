@@ -39,6 +39,11 @@ h1 {
 	display: contents;
 }
 
+.banner-logo img {
+	height: 15vmax;
+	justify-content: center;
+}
+
 .site-banner h3 {
 	font-style: italic;
 	font-size: 2vmax;
@@ -101,6 +106,13 @@ nav {
 	text-align: center;
 }
 
+.display {
+	padding: 1em;
+	max-width: 80%;
+	max-height: 80vh;
+	margin: auto;
+}
+
 @media only screen and (min-width: 601px) {
 	nav {
 		max-width: calc(30vmax * 2);
@@ -115,6 +127,7 @@ nav {
 
 	.welcome-message h2 {
 		padding: .5em;
+		font-size: 20px;
 	}
 
 	.catagory-buttons li {
@@ -169,9 +182,40 @@ nav {
 
 		margin: 5px 10px 5px 50%;
 	}
+
+	.display {
+		max-width: 615px;
+	}
 }
 
 @media only screen and (min-width: 1200px) and (hover: hover) {
+	main {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		max-width: 1100px;
+		margin: 0 auto;
+	}
 
+	nav {
+		width: calc(615px * 0.80);
+		height: calc(317px * 0.80);
+		background-size: calc(310px * 0.80);
+		padding: calc(10px * 0.80);
+		margin: 50px auto;
+	}
+
+	.welcome-message {
+		margin: 1.6%;
+		margin-left: 50%;
+	}
+
+	.welcome-message h2, nav ul li a {
+		font-size: calc(20px * 0.80)
+	}
+
+	.preview {
+		margin-top: 50px;
+		border: 2px solid var(--ember);
+	}
 }
 	
