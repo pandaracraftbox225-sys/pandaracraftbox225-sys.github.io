@@ -80,6 +80,7 @@ p {
     border-radius: 100px;
     margin-left: 0.5em;
 
+    display: block;
     align-items: center;
     justify-content: center;
     color: var(--lavender);
