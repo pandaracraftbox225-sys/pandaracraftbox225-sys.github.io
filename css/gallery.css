@@ -45,46 +45,32 @@ p {
 .group {
     display: flex;
     align-items: center;
+}
+
+.art {
     max-width: calc(100% - 2em);
     overflow-x: auto;
     margin: 1em auto;
     border: 2px solid var(--cherry);
+    flex-grow: 1;
 }
 
-.group::-webkit-scrollbar {
+.art::-webkit-scrollbar {
     display: none;
 }
 
-.l-arrow {
+.arrow {
     height: 2em;
     width: 2em;
     background: var(--ink);
     border: 2px solid red;
     border-radius: 100px;
-    margin-left: 0.5em;
+    margin: 0.5em;
 
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--lavender);
-    position: sticky;
-    left: calc(0.5em - 1px);
-}
-
-.r-arrow {
-    height: 2em;
-    width: 2em;
-    display: flex;
-    background: var(--ink);
-    border: 2px solid red;
-    border-radius: 100px;
-    margin-left: 0.5em;
-
-    align-items: center;
-    justify-content: center;
-    color: var(--lavender);
-    position: -webkit-sticky;
-    right: calc(0.5em - 1px);
 }
 
 .carousel {
