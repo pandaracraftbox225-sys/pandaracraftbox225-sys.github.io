@@ -88,9 +88,16 @@ let displayRandomItemInCatagory = (itemList) => {
 let displayRandomCatagory = () => {
     let catagory = getRandomCatagory();
     console.log(catagory);
+
     document.querySelector('#catagory').innerHTML = catagory.catagoryName;
+    document.querySelector('#catagory').style.display = 'block';
+
     document.querySelector('#medium').innerHTML = catagory.medium;
+    document.querySelector('#medium').style.display = 'block';
+
     displayRandomItemInCatagory(catagory.itemList);
+    document.querySelector('#artwork').style.display = 'block';
 };
 
+displayRandomCatagory();
 window.setInterval(displayRandomCatagory, 3000);
