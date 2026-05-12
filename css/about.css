@@ -28,3 +28,7 @@ p {
     border: 2px solid var(--cherry);
     font-size: 15px;
 }
+
+.artist-image {
+    width: 40%;
+}
