@@ -16,6 +16,7 @@
     background: linear-gradient(to bottom, var(--lavender) 75%, rgb(255,0,0,0) 100%);
     position: initial;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .banner h1 {
@@ -25,8 +26,9 @@
 
 .disclaimer {
     width: 80%;
-    margin: 1em auto;
-    border: 2px solid var(--cherry);
+    margin: 0 auto;
+    border: 2px solid var(--ember);
+    box-shadow: inset var(--ember) 0 0px 2px, inset #991200 0 0 4px, inset #991200 0 0 10px, var(--ember) 0 0px 4px, #991200 0 0 10px, #991200 0 0 20px;
     font-size: 15px;
 }
 
@@ -38,8 +40,9 @@ p {
 /***************Image Galary Secton*****************/
 .gallery {
     border: 2px solid var(--ember);
+    box-shadow: inset var(--ember) 0 0px 2px, inset #991200 0 0 4px, inset #991200 0 0 10px, var(--ember) 0 0px 4px, #991200 0 0 10px, #991200 0 0 20px;
     width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .group {
@@ -50,8 +53,9 @@ p {
 .art {
     max-width: calc(100% - 2em);
     overflow-x: auto;
-    margin: 1em auto;
+    margin: 1em auto 0;
     border: 2px solid var(--cherry);
+    box-shadow: inset var(--cherry) 0 0px 4px, inset var(--ember) 0 0 6px, inset var(--ember) 0 0 10px, var(--cherry) 0 0px 4px, var(--ember) 0 0 10px, var(--ember) 0 0 20px;
     flex-grow: 1;
 }
 
@@ -65,12 +69,16 @@ p {
     background: var(--ink);
     border: 2px solid red;
     border-radius: 100px;
+    box-shadow: inset var(--cherry) 0 0px 2px, inset var(--ember) 0 0 4px, inset var(--ember) 0 0 10px, var(--cherry) 0 0px 4px, var(--ember) 0 0 10px, var(--ember) 0 0 20px;
     margin: 0.5em;
-
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--lavender);
+}
+
+.arrow:hover {
+    cursor: default;
 }
 
 .carousel {
@@ -91,6 +99,7 @@ p {
 
 .gallery h3 {
     text-align: center;
+    margin-top: .5em;
 }
 
 .carousel img {
