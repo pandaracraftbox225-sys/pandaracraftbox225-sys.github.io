@@ -1,22 +1,16 @@
 
 let sticker = {
     'catagoryName': 'Sticker',
-    'medium': 'Digital Tablet',
+    'medium': 'Digitally Designed',
     'itemList': [
         'assets/Lloyd_Irving_Sticker.png',
         'assets/Lloyd_Irving_Sticker.png',
-        'assets/Lloyd_Irving_Sticker.png',
-        'assets/Colette_Brunel_Sticker.png',
         'assets/Colette_Brunel_Sticker.png',
         'assets/Colette_Brunel_Sticker.png',
         'assets/Genis_Sage_Sticker.png',
         'assets/Genis_Sage_Sticker.png',
-        'assets/Genis_Sage_Sticker.png',
         'assets/Raine_Sage_Sticker.png',
         'assets/Raine_Sage_Sticker.png',
-        'assets/Raine_Sage_Sticker.png',
-        'assets/Mieu_Sticker.png',
-        'assets/Mieu_Sticker.png',
         'assets/Mieu_Sticker.png',
         'assets/Mieu_Sticker.png',
         'assets/Undine_Sticker.png',
@@ -50,13 +44,23 @@ let graphite = {
 };
 
 let keychain = {
-    'catagoryName': 'Fan Merchandise',
-    'medium': 'Keychain',
+    'catagoryName': 'Keychain',
+    'medium': 'Digitally Designed',
     'itemList': [
         'assets/Inferia_Shaker_Charm.png',
         'assets/Celestia_Shaker_Charm.png',
     ]
 };
+
+let pillow = {
+    'catagoryName': 'Pillow',
+    'medium': 'Digitally Designed',
+    'itemList': [
+        'assets/rollo_pillow.jpeg',
+        'assets/mieu_pillow.jpeg',
+    ]
+};
+
 
 const listOfCatagories = [
     sticker,
@@ -74,6 +78,10 @@ const listOfCatagories = [
     keychain,
     keychain,
     keychain,
+    pillow,
+    pillow,
+    pillow,
+    pillow,
 ];
 
 
@@ -101,3 +109,7 @@ let displayRandomCatagory = () => {
 
 displayRandomCatagory();
 window.setInterval(displayRandomCatagory, 3000);
+
+function morphToX(x) {
+    x.classList.toggle("change");
+};

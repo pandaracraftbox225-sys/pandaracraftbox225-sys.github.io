@@ -19,9 +19,12 @@
     margin-bottom: 30px;
 }
 
-.banner h1 {
+.banner h2 {
+    color: var(--ink);
+    font-size: 20px;
     text-decoration: 2px underline var(--sky);
     text-underline-offset: .2em;
+    flex-wrap: nowrap;
 }
 
 .disclaimer {
@@ -40,9 +43,9 @@ p {
 /***************Image Galary Secton*****************/
 .gallery {
     border: 2px solid var(--ember);
-    box-shadow: inset var(--ember) 0 0px 2px, inset #991200 0 0 4px, inset #991200 0 0 10px, var(--ember) 0 0px 4px, #991200 0 0 10px, #991200 0 0 20px;
     width: 80%;
     margin: 10px auto;
+    padding-bottom: 1em;
 }
 
 .group {
@@ -55,7 +58,8 @@ p {
     overflow-x: auto;
     margin: 1em auto 0;
     border: 2px solid var(--cherry);
-    box-shadow: inset var(--cherry) 0 0px 4px, inset var(--ember) 0 0 6px, inset var(--ember) 0 0 10px, var(--cherry) 0 0px 4px, var(--ember) 0 0 10px, var(--ember) 0 0 20px;
+    border-radius: 5px;
+    padding: 0 5px;
     flex-grow: 1;
 }
 
@@ -69,7 +73,6 @@ p {
     background: var(--ink);
     border: 2px solid red;
     border-radius: 100px;
-    box-shadow: inset var(--cherry) 0 0px 2px, inset var(--ember) 0 0 4px, inset var(--ember) 0 0 10px, var(--cherry) 0 0px 4px, var(--ember) 0 0 10px, var(--ember) 0 0 20px;
     margin: 0.5em;
     display: flex;
     align-items: center;
@@ -104,6 +107,11 @@ p {
 
 .carousel img {
     max-height: 100%;
+}
+
+.not, .note p {
+    padding: 5px;
+    font-size: 15px;
 }
 
 
