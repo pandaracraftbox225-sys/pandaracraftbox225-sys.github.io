@@ -31,6 +31,7 @@ let colorPencil = {
     'medium': 'Colored Pencils',
     'itemList': [
         'assets/sylverant_field_trip.png',
+        'assets/Milla_Maxwell_Print.JPG',
     ]
 };
 
