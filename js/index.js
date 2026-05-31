@@ -11,6 +11,8 @@ let sticker = {
         'assets/Genis_Sage_Sticker.png',
         'assets/Raine_Sage_Sticker.png',
         'assets/Raine_Sage_Sticker.png',
+        'assets/Corrine_Sticker.png',
+        'assets/Corrine_Sticker.png',
         'assets/Mieu_Sticker.png',
         'assets/Mieu_Sticker.png',
         'assets/Undine_Sticker.png',
